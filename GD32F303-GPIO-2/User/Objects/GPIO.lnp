@@ -1,0 +1,13 @@
+--cpu Cortex-M4
+".\objects\startup_gd32f30x_hd.o"
+".\objects\gd32f30x_rcu.o"
+".\objects\gd32f30x_gpio.o"
+".\objects\gd32f30x_misc.o"
+".\objects\system_gd32f30x.o"
+".\objects\main.o"
+".\objects\gd32f30x_it.o"
+".\objects\bsp_gpio.o"
+--strict --scatter ".\Objects\GPIO.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\GPIO.map" -o .\Objects\GPIO.axf

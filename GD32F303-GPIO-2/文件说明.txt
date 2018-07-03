@@ -1,0 +1,14 @@
+1.bsp
+里面是对硬件底层的代码
+
+2.GD32F30x_standard_peripheral
+各个外设层代码
+
+3.Starup
+存放启动代码
+
+4.SystemClock
+时钟线配置代码
+
+5.SystemRegister
+寄存器地址映射，和个别中断服务函数代码
