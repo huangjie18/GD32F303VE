@@ -405,9 +405,13 @@ void gd32_LcdWriCommand(unsigned char command)
 		command<<=1;
 	}
 	#else
+	u8 i;
 	gd32_dc = 0;
 	SPI_I2S_SendData(SPI1, command); //通过外设SPIx发送一个数据
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET); //检查发送是否完成
+	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET)
+	{
+		if((i++)>200) break;
+	}; //检查发送是否完成
 	#endif
 }
 
@@ -434,9 +438,13 @@ void gd32_LcdWriData(unsigned char Data)
 		Data<<=1;
 	}
 	#else
+	u8 i;
 	gd32_dc = 1;
 	SPI_I2S_SendData(SPI1, Data); //通过外设SPIx发送一个数据
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET); //检查发送是否完成
+	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET)
+	{
+		if((i++)>200) break;
+	}; //检查发送是否完成
 	#endif
 }
 

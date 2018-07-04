@@ -15,9 +15,6 @@
 /****************************************正点原子移植*************************************/
 //位带操作,实现51类似的GPIO控制功能
 //具体实现思想,参考<<CM3权威指南>>第五章(87页~92页).
-
-
-
 //IO口操作宏定义
 #define GPIOA_BASE                      GPIOA
 #define GPIOB_BASE                      GPIOB
@@ -317,10 +314,6 @@ typedef enum IRQn
 #include <stdint.h>
 
 /* enum definitions */
-typedef uint32_t  u32;
-typedef uint16_t u16;
-typedef uint8_t  u8;
-
 typedef enum {DISABLE = 0, ENABLE = !DISABLE} EventStatus, ControlStatus;
 typedef enum {FALSE = 0, TRUE = !FALSE} bool;
 typedef enum {RESET = 0, SET = !RESET} FlagStatus;

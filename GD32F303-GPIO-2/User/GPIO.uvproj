@@ -435,6 +435,11 @@
               <FileType>1</FileType>
               <FilePath>..\GD32F30x_standard_peripheral\Source\gd32f30x_misc.c</FilePath>
             </File>
+            <File>
+              <FileName>gd32f30x_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GD32F30x_standard_peripheral\Source\gd32f30x_spi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -474,6 +479,16 @@
               <FileName>bsp_gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\src\bsp_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\src\bsp_lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\src\bsp_delay.c</FilePath>
             </File>
           </Files>
         </Group>

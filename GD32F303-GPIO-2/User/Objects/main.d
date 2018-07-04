@@ -34,3 +34,5 @@
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: ..\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h
 .\objects\main.o: ..\bsp\inc\bsp_gpio.h
+.\objects\main.o: ..\bsp\inc\bsp_delay.h
+.\objects\main.o: ..\bsp\inc\bsp_lcd.h

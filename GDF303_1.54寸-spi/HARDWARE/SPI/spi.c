@@ -115,7 +115,7 @@ void SPI1_Init(void)
 //返回值:读取到的字节
 u8 SPI1_ReadWriteByte(u8 TxData)
 {		
-	u8 retry=0;				 	
+//	u8 retry=0;				 	
 //	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) != SET) //检查指定的SPI标志位设置与否:发送缓存空标志位
 //		{
 //			retry++;

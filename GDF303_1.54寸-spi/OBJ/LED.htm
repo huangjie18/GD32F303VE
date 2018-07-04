@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\LED.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\LED.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050169: Last Updated: Tue Jul 03 14:05:50 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050169: Last Updated: Tue Jul 03 15:41:15 2018
 <BR><P>
 <H3>Maximum Stack Usage =         56 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -591,7 +591,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[74]"></a>gd_display_rgb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, lcd.o(i.gd_display_rgb))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = gd_display_rgb &rArr; gd_WriteDAT &rArr; gd32_LcdWriData
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = gd_display_rgb &rArr; gd_WriteDAT &rArr; gd32_LcdWriData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_WriteDAT
 </UL>
@@ -599,7 +599,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[75]"></a>gd_lcd_init</STRONG> (Thumb, 480 bytes, Stack size 8 bytes, lcd.o(i.gd_lcd_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = gd_lcd_init &rArr; gd_delay_ms
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = gd_lcd_init &rArr; gd32_LcdWriData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd32_LcdWriData
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd32_LcdWriCommand
@@ -638,8 +638,8 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 
-<P><STRONG><a name="[69]"></a>gd32_LcdWriCommand</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd.o(i.gd32_LcdWriCommand))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = gd32_LcdWriCommand
+<P><STRONG><a name="[69]"></a>gd32_LcdWriCommand</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, lcd.o(i.gd32_LcdWriCommand))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = gd32_LcdWriCommand
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_SendData
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_GetFlagStatus
@@ -647,8 +647,8 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_lcd_init
 </UL>
 
-<P><STRONG><a name="[6c]"></a>gd32_LcdWriData</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd.o(i.gd32_LcdWriData))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = gd32_LcdWriData
+<P><STRONG><a name="[6c]"></a>gd32_LcdWriData</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, lcd.o(i.gd32_LcdWriData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = gd32_LcdWriData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_SendData
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_GetFlagStatus
@@ -658,7 +658,7 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[6f]"></a>gd_WriteDAT</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, lcd.o(i.gd_WriteDAT))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = gd_WriteDAT &rArr; gd32_LcdWriData
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = gd_WriteDAT &rArr; gd32_LcdWriData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd32_LcdWriData
 </UL>
