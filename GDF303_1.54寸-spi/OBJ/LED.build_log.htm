@@ -27,7 +27,36 @@ Project File Date:  07/02/2018
 <h2>Output:</h2>
 *** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'LED'
-"..\OBJ\LED.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\HARDWARE\SPI\spi.h(9): warning:  #47-D: incompatible redefinition of macro "SCL" (declared at line 50 of "..\HARDWARE\LCD\lcd.h")
+  #define SCL PBout(13) 
+..\HARDWARE\SPI\spi.h(10): warning:  #47-D: incompatible redefinition of macro "SDA" (declared at line 49 of "..\HARDWARE\LCD\lcd.h")
+  #define SDA PBout(15)
+..\HARDWARE\SPI\spi.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\system_init\gd32f30x.h(81): warning:  #47-D: incompatible redefinition of macro "__MPU_PRESENT" (declared at line 158 of "..\USER\stm32f10x.h")
+  #define __MPU_PRESENT             1        /*!< GD32F30x do not provide MPU                              */
+..\SYSTEM\system_init\gd32f30x.h(290): warning:  #47-D: incompatible redefinition of macro "RTC_BASE" (declared at line 1295 of "..\USER\stm32f10x.h")
+  #define RTC_BASE              (APB1_BUS_BASE + 0x00002800U)  /*!< RTC base address                 */
+..\SYSTEM\system_init\gd32f30x.h(298): warning:  #47-D: incompatible redefinition of macro "BKP_BASE" (declared at line 1308 of "..\USER\stm32f10x.h")
+  #define BKP_BASE              (APB1_BUS_BASE + 0x00006C00U)  /*!< BKP base address                 */
+..\SYSTEM\system_init\gd32f30x.h(300): warning:  #47-D: incompatible redefinition of macro "DAC_BASE" (declared at line 1310 of "..\USER\stm32f10x.h")
+  #define DAC_BASE              (APB1_BUS_BASE + 0x00007400U)  /*!< DAC base address                 */
+..\SYSTEM\system_init\gd32f30x.h(304): warning:  #47-D: incompatible redefinition of macro "AFIO_BASE" (declared at line 1313 of "..\USER\stm32f10x.h")
+  #define AFIO_BASE             (APB2_BUS_BASE + 0x00000000U)  /*!< AFIO base address                */
+..\SYSTEM\system_init\gd32f30x.h(305): warning:  #47-D: incompatible redefinition of macro "EXTI_BASE" (declared at line 1314 of "..\USER\stm32f10x.h")
+  #define EXTI_BASE             (APB2_BUS_BASE + 0x00000400U)  /*!< EXTI base address                */
+..\SYSTEM\system_init\gd32f30x.h(310): warning:  #47-D: incompatible redefinition of macro "SDIO_BASE" (declared at line 1336 of "..\USER\stm32f10x.h")
+  #define SDIO_BASE             (AHB1_BUS_BASE + 0x00000000U)  /*!< SDIO base address                */
+..\SYSTEM\system_init\gd32f30x.h(314): warning:  #47-D: incompatible redefinition of macro "CRC_BASE" (declared at line 1353 of "..\USER\stm32f10x.h")
+  #define CRC_BASE              (AHB1_BUS_BASE + 0x0000B000U)  /*!< CRC base address                 */
+main.c(70): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 12 warnings, 0 errors
+linking...
+Program Size: Code=2524 RO-data=336 RW-data=16 ZI-data=1832  
+FromELF: creating hex file...
+"..\OBJ\LED.axf" - 0 Error(s), 12 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\GitHub\GD32F303VE\GDF303_1.54´ç-spi\USER\RTE

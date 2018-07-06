@@ -36,7 +36,7 @@ int main(void)
 {
 	
 	
-	gd32f30x_SystemInit();  //120M主频
+//	gd32f30x_SystemInit();  //120M主频
 	
 	gd_delay_init(120);     //用到延时一定要添加这个,因为延时用到了滴答定时器
 	
